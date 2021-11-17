@@ -5,14 +5,22 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: "asd", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-black);
+  font-size: 14px;
 }
-
+h1,h2,h3,h4,h5,h6
+{
+  margin: 0;
+  padding: 0;
+}
 img {
   max-width: 100%;
 }
@@ -44,8 +52,9 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 20px;
+  max-width: 1280px;
+  width: 100%;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
