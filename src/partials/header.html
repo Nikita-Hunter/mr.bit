@@ -1,19 +1,13 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <div class="header__logo">
+      <a href="#" class="header__logo link-reset">
         <img src="img/logo.svg" alt="Логотип MR.Быт">
-      </div>
-      <button class="btn-bar btn-reset">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#" class="nav__link link-reset">Цена на услуги</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link-reset">О компании</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link-reset">Отзывы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link-reset">Контакты</a></li>
-        </ul>
+      </a>
+      <div class="problem-block">
+        <button class="btn-bar btn-reset" id="btn-bar">
+          <i class="fas fa-bars"></i>
+        </button>
         <div class="menu-wrap">
           <div class="menu-wrap__col">
             <ul class="porblem-list list-reset">
@@ -38,17 +32,26 @@
             <a href="#" class="btn-primary">Подробнее <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link link-reset">Цена на услуги</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link-reset">О компании</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link-reset">Отзывы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link-reset">Контакты</a></li>
+        </ul>
       </nav>
       <ul class="contact-list list-reset">
-        <li class="contact-list__item"><a href="#" class="contact-list__link"><i class="fas fa-sort-down"></i>Москва и Подмосковье</a></li>
+        <li id="cityMenu" class="contact-list__item"><a href="#" class="contact-list__link"><i class="fas fa-sort-down"></i>Москва и Подмосковье</a>
+          <div id="cityWrap" class="city-wrap">
+            <ul class="city-list list-reset">
+              <li class="city-list__item"><a href="#" class="city-list__link link-reset">Москва и Подмосковье</a></li>
+              <li class="city-list__item"><a href="#" class="city-list__link link-reset">Санкт-Петербург</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="contact-list__item"><a href="tel:+79451065216" class="contact-list__link link-reset">8(945)<span>106-52-16</span></a></li>
       </ul>
-      <div class="city-wrap">
-        <ul class="city-list list-reset">
-          <li class="city-list__item"><a href="#" class="city-list__link link-reset">Москва и Подмосковье</a></li>
-          <li class="city-list__item"><a href="#" class="city-list__link link-reset">Санкт-Петербург</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 </header>
