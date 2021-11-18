@@ -65,6 +65,7 @@
             justify-content: center;
             border-radius: 3px;
             overflow: hidden;
+            position: relative;
             input
             {
                 width: 100%;
@@ -77,20 +78,20 @@
                 line-height: 22px;
                 position: relative;
                 color: #3E3E3E;
-                &::after
+                &::before
                 {
+                    content: '';
                     position: absolute;
-                    display: block;
-                    z-index: 3;
                     top: 0;
                     left: 0;
-                    content: '';
-                    background-image: url('../img/flag.svg');
-                    background-size: cover;
+                    display: block;
+                    // background-image: url('../img/flag.svg');
+                    // background-size: cover;
+                    background-color: red;
                     width: 26px;
                     height: 21px;
-                    background-position: center;
-                    background-repeat: no-repeat;
+                    // background-position: center;
+                    // background-repeat: no-repeat;
                 }
                 &::placeholder
                 {
