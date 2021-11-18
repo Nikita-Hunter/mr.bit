@@ -1,0 +1,121 @@
+.hero
+{
+    width: 100%;
+    min-height: 754px;
+    background-color: var(--color-yellow);
+    &__inner
+    {
+        width: auto;
+    }
+    &__wrap
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    &__info
+    {
+        padding: 107px 0 207px 0;
+        width: 711px;
+        &--subtitle
+        {
+            margin-bottom: 35px;
+            h3
+            {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                text-align: left;
+                color: #3E3E3E;
+                text-transform: uppercase;
+            }
+        }
+        &--title
+        {
+            margin-bottom: 35px;
+            h2
+            {
+                font-weight: 700;
+                text-align: left;
+                color: var(--color-white);
+                font-size: 58px;
+                line-height: 72px;
+            }
+        }
+        &--span
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+            span
+            {
+                font-size: 24px;
+                line-height: 29px;
+                text-align: left;
+                color: #3E3E3E;
+                margin-left: 11.92px;
+            }
+        }
+        &--form
+        {
+            width: 450px;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-white);
+            justify-content: center;
+            border-radius: 3px;
+            overflow: hidden;
+            input
+            {
+                width: 100%;
+                color: var(--color-white);
+                color: #3E3E3E;
+                padding: 18px 0 18px 72px;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                line-height: 22px;
+                position: relative;
+                color: #3E3E3E;
+                &::after
+                {
+                    position: absolute;
+                    display: block;
+                    z-index: 3;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    background-image: url('../img/flag.svg');
+                    background-size: cover;
+                    width: 26px;
+                    height: 21px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &::placeholder
+                {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #3E3E3E;
+                    text-align: left;
+                }
+            }
+            button
+            {
+                padding: 18px 0;
+                width: 163.66px;
+                background-color: var(--color-primary);
+                text-transform: uppercase;
+                align-items: center;
+                color: var(--color-white);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                border-radius: 3px;
+                transition: all .2s linear;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

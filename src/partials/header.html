@@ -4,32 +4,34 @@
       <a href="#" class="header__logo link-reset">
         <img src="img/logo.svg" alt="Логотип MR.Быт">
       </a>
-      <div class="problem-block">
-        <button class="btn-bar btn-reset" id="btn-bar">
+      <div x-data="{ open: false }" class="problem-block">
+        <button x-on:click="open = true" class="btn-bar btn-reset" id="btn-bar">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="menu-wrap">
-          <div class="menu-wrap__col">
-            <ul class="porblem-list list-reset">
-              <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт стиральных машин</a></li>
-              <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт холодильников</a></li>
-              <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт посудомоечных машин</a></li>
-            </ul>
-          </div>
-          <div class="menu-wrap__col">
-            <ul class="points-list list-reset">
-              <li class="points-list__item">Не морозит</li>
-              <li class="points-list__item">Перемораживает</li>
-              <li class="points-list__item">Намерзает лёд</li>
-              <li class="points-list__item">Не включается</li>
-              <li class="points-list__item">Не выключается</li>
-              <li class="points-list__item">Не включается</li>
-              <li class="points-list__item">Сильно шумит</li>
-              <li class="points-list__item">Протекает</li>
-              <li class="points-list__item">Не холодит</li>
-              <li class="points-list__item">Греется</li>
-            </ul>
-            <a href="#" class="btn-primary">Подробнее <i class="fas fa-arrow-right"></i></a>
+        <div x-show="open" x-transition.opacity class="wrap-opacity">
+          <div x-on:click.away="open = false" class="menu-wrap">
+            <div class="menu-wrap__col">
+              <ul class="porblem-list list-reset">
+                <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт стиральных машин</a></li>
+                <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт холодильников</a></li>
+                <li class="problem-list__item"><a href="#" class="problem-list__link link-reset">Ремонт посудомоечных машин</a></li>
+              </ul>
+            </div>
+            <div class="menu-wrap__col">
+              <ul class="points-list list-reset">
+                <li class="points-list__item">Не морозит</li>
+                <li class="points-list__item">Перемораживает</li>
+                <li class="points-list__item">Намерзает лёд</li>
+                <li class="points-list__item">Не включается</li>
+                <li class="points-list__item">Не выключается</li>
+                <li class="points-list__item">Не включается</li>
+                <li class="points-list__item">Сильно шумит</li>
+                <li class="points-list__item">Протекает</li>
+                <li class="points-list__item">Не холодит</li>
+                <li class="points-list__item">Греется</li>
+              </ul>
+              <a href="#" class="btn-primary">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
